@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "bfcbd85d-aff1-4dee-b1e8-3d4f551224ef",
+		"name": "AccountBalance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Account Transfer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"to_account_number\":\"550002\",\n    \"amount\":1000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/account/550001/transfer",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"account",
+						"550001",
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/account/1003",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"account",
+						"1003"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

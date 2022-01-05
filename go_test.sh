@@ -1,0 +1,2 @@
+go test usecase/account_balance_repository_test.go
+go test repository/account_balance_repository_test.go
